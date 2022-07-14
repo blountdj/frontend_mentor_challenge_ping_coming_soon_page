@@ -1,0 +1,15 @@
+.email {
+  padding: 1rem;
+  border-radius: 2rem;
+  border: 1px solid $color-gray-light;
+  padding-left: 2rem;
+  width: 65%;
+
+  &::placeholder {
+    color: $color-gray-light;
+  }
+  &:focus {
+    outline: none;
+    border: 1px solid $color-blue;
+  }
+}

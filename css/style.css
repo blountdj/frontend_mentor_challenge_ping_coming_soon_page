@@ -1,0 +1,121 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  box-sizing: inherit; }
+
+body {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 38%;
+  margin: 4rem auto;
+  gap: 4rem; }
+  .main__logo {
+    margin-bottom: 2rem; }
+  .main__heading {
+    font-weight: 300;
+    font-size: 4.2rem;
+    margin-bottom: 1rem;
+    color: #cecaca; }
+    .main__heading--bold {
+      font-weight: 700;
+      color: #151f29; }
+  .main__subheading {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 1rem; }
+  .main__form {
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    position: relative; }
+  .main__image {
+    width: 100%;
+    margin-bottom: 3rem; }
+  .main__footer {
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem; }
+    .main__footer__row {
+      display: flex;
+      gap: 1.5rem; }
+    .main__footer__icon {
+      height: 16px;
+      width: 16px;
+      cursor: pointer;
+      transition: all 0.2s; }
+      .main__footer__icon:hover {
+        transform: scale(1.2); }
+
+.main__form__error {
+  position: absolute;
+  color: #ff5263;
+  font-size: 1.6rem;
+  bottom: -2rem;
+  left: 2.1rem;
+  opacity: 0;
+  transition: all 0.2s; }
+
+.error > .main__form__error {
+  opacity: 1; }
+
+.error > .email {
+  border: 1px solid #ff5263; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 2rem;
+  line-height: 1;
+  color: #969696; }
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin: 2rem auto; }
+
+.attribution a {
+  color: #3e52a3; }
+
+.email {
+  padding: 1rem;
+  border-radius: 2rem;
+  border: 1px solid #cecaca;
+  padding-left: 2rem;
+  width: 65%; }
+  .email::placeholder {
+    color: #cecaca; }
+  .email:focus {
+    outline: none;
+    border: 1px solid #4f7df3; }
+
+.submit {
+  padding: 1rem;
+  border-radius: 2rem;
+  border: none;
+  color: white;
+  background-color: #4f7df3;
+  box-shadow: 0px 2px 5px 1px rgba(79, 125, 243, 0.5);
+  width: 30%;
+  font-weight: 600;
+  cursor: pointer; }
+  .submit:hover {
+    filter: brightness(1.1); }
+  .submit:focus {
+    outline: none; }
