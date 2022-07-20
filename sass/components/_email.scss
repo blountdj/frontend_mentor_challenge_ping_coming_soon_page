@@ -1,9 +1,12 @@
 .email {
-  padding: 1rem;
+  padding: 1.6rem;
   border-radius: 2rem;
   border: 1px solid $color-gray-light;
   padding-left: 2rem;
   width: 65%;
+  color: $color-very-dark-blue;
+  font-size: 1.6rem;
+  font-weight: 300;
 
   &::placeholder {
     color: $color-gray-light;
