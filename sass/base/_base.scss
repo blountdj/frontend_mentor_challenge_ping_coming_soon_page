@@ -14,6 +14,10 @@ body {
   align-items: center;
 }
 
+div.container {
+  width: 100%;
+}
+
 .main {
   display: flex;
   flex-direction: column;
@@ -42,7 +46,7 @@ body {
   &__subheading {
     font-size: 2rem;
     font-weight: 300;
-    margin-bottom: 1rem;
+    margin-bottom: 1.4rem;
   }
 
   &__form {
@@ -76,6 +80,10 @@ body {
       width: 16px;
       cursor: pointer;
       transition: all 0.2s;
+      fill: yellow;
+      stroke: green;
+      background-color: brown;
+      color: pink;
 
       &:hover {
         transform: scale(1.2);
