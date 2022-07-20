@@ -1,18 +1,20 @@
-.email {
+.submit {
   padding: 1.6rem;
   border-radius: 2rem;
-  border: 1px solid $color-gray-light;
-  padding-left: 2rem;
-  width: 65%;
-  color: $color-very-dark-blue;
+  border: none;
+  color: $color-white;
+  background-color: $color-blue;
+  box-shadow: 0px 2px 5px 1px rgba($color-blue, 0.5);
+  width: 30%;
+  font-weight: 600;
   font-size: 1.6rem;
-  font-weight: 300;
+  cursor: pointer;
 
-  &::placeholder {
-    color: $color-gray-light;
+  &:hover {
+    filter: brightness(1.1);
   }
+
   &:focus {
     outline: none;
-    border: 1px solid $color-blue;
   }
 }
