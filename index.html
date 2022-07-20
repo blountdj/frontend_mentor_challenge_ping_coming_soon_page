@@ -5,11 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
 
-     <script
-      src="https://kit.fontawesome.com/bb067ebdd5.js"
-      crossorigin="anonymous"
-    ></script>
-    
     <link
       rel="icon"
       type="image/png"
@@ -17,6 +12,10 @@
       href="./images/favicon-32x32.png"
     />
 
+    <script
+      src="https://kit.fontawesome.com/bb067ebdd5.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,28 +27,35 @@
     <title>Frontend Mentor | Ping coming soon page</title>
   </head>
   <body>
-    <main class="main">
-      <img src="images/logo.svg" alt="ping logo" class="main__logo" />
+    <main class="main" role="main">
+      <img src="../images/logo.svg" alt="ping logo" class="main__logo" />
 
       <h1 class="main__heading">
         We are launching <span class="main__heading--bold">soon!</span>
       </h1>
 
-      <h3 class="main__subheading">Subscribe and get notified</h3>
+      <h2 class="main__subheading">Subscribe and get notified</h2>
 
-      <form action="" class="main__form">
-        <input type="email" class="email" placeholder="Your email address" />
-        <button class="submit">Notify Me</button>
-        <p class="main__form__error">Please provide a valid email address</p>
-      </form>
+      <div class="container" role="form" aria-labelledby="contact">
+        <form action="_self" class="main__form">
+          <input
+            id="contact"
+            type="email"
+            class="email"
+            placeholder="Your email address..."
+          />
+          <button class="submit">Notify Me</button>
+          <p class="main__form__error">Please provide a valid email address</p>
+        </form>
+      </div>
 
       <img
-        src="images/illustration-dashboard.png"
+        src="../images/illustration-dashboard.png"
         alt="dashboard"
         class="main__image"
       />
 
-      <footer class="main__footer">
+      <footer class="main__footer" role="contentinfo">
         <div class="main__footer__row">
           <i class="fa-brands fa-facebook-f"></i>
           <i class="fa-brands fa-twitter"></i>
@@ -58,7 +64,7 @@
         <p class="main__footer_copyright">
           &copy; Copyright Ping. All rights reserved.
         </p>
-      </footer>     
+      </footer>
     </main>
 
     <footer>
